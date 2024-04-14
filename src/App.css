@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.dropped-image {
+  width: auto;
+  height: auto; /* Allow image to adapt its height */
+  max-width: 100%; /* Optional: Set a maximum width if needed */
+}
