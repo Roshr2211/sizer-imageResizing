@@ -18,7 +18,6 @@ export default function DropBox({setting_img_details}){
     const file = acceptedFiles[0];
     const reader = new FileReader();
     reader.onload = (e) => {
-        console.log(e.target.result)
       setSelectedFile({
         dataUrl: e.target.result,
         name: file.name,
@@ -39,10 +38,10 @@ export default function DropBox({setting_img_details}){
               const img = document.getElementById("drop_img");
               setting_img_details({
                 FileName : selectedFile.name,
+                dataURL : selectedFile.dataUrl,
                 w : img.width,
                 h : img.height
               })
-              console.log()
             }} />
         </div>
     ) : (

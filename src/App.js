@@ -7,7 +7,7 @@ import Resizer from './Components/Resizer';
 
 /*
 {
-  name: "image.png",
+  file: "image.png",
   w: 1080,
   h: 1080,
 }
@@ -22,6 +22,7 @@ function App() {
       <div className='flex justify-center'>
         <DropBox setting_img_details={setDetails}/>
         <Resizer get_img_details={details} set_img_details={setDetails}/>
+        {console.log(details)}
       </div>
     </div>
   );

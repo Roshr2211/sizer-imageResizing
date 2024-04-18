@@ -51,20 +51,14 @@ export default function Resizer({get_img_details, set_img_details}){
             <div className="pl-8">
                 <form>
                     <input className="m-1 outline-none text-white border-2 bg-inherit border-cyan-300 rounded-2xl w-full px-3 py-1" type="text" name="fileName" id="name" placeholder="File name" value={get_img_details.FileName} onChange={()=>{
-                        const fld = document.getElementsByName("fileName");
-                        set_img_details(
-                            {
-                                FileName : fld.value,
-                                w : get_img_details.w,
-                                h : get_img_details.h
-                            }
-                        )
+                        
                     }}/><br/>
                     <input className="m-1 outline-none text-white border-2 bg-inherit border-cyan-300 rounded-2xl w-32 px-3 py-1" type="text" name="width" id="name" placeholder="width" value={get_img_details.w} onChange={()=>{
                         const fld = document.getElementsByName("width");
                         set_img_details(
                             {
                                 FileName : get_img_details.FileName,
+                                dataURL : get_img_details.dataURL,
                                 w : fld.value,
                                 h : get_img_details.h
                             }
@@ -80,6 +74,7 @@ export default function Resizer({get_img_details, set_img_details}){
                         set_img_details(
                             {
                                 FileName : get_img_details.FileName,
+                                dataURL : get_img_details.dataURL,
                                 w : get_img_details.w,
                                 h : fld.value
                             }
@@ -94,7 +89,9 @@ export default function Resizer({get_img_details, set_img_details}){
                         <h1 className="mt-8">
                             Presets:
                         </h1>
-                        <button className="rounded-2xl my-2 ">
+                        <button className="rounded-2xl my-2 " onClick={()=>{
+                            ;
+                        }}>
                             <svg width="166" height="64" viewBox="0 0 166 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g filter="url(#filter0_d_2_90)">
                             <path d="M4 28C4 12.536 16.536 0 32 0H134C149.464 0 162 12.536 162 28C162 43.464 149.464 56 134 56H32C16.536 56 4 43.464 4 28Z" fill="#353535"/>
