@@ -7,7 +7,7 @@ Install [Golang](https://go.dev)
 
 [Node.js](https://nodejs.org/en) must be installed to use node package manager (npm)
 
-## Aathil's Execution guide
+## Project Execution guide
 Download or git clone to local, cd into the project direcrory and run
 ```
 npm install
