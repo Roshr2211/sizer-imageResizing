@@ -16,3 +16,9 @@ To run the web app, run
 ```
 npm start
 ```
+
+## Planned Features
+- Image upload area (drag n drop)
+- Image renaming field
+- Image custom dimension fields
+- Dimension presets
