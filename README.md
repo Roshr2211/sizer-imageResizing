@@ -18,7 +18,9 @@ npm start
 ```
 
 ## Planned Features
+- Support for `.png` and `.jpeg`
 - Image upload area (drag n drop)
 - Image renaming field
-- Image custom dimension fields
+- Image custom dimensions fields
 - Dimension presets
+- Resized Image Download
