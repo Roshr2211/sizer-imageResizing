@@ -4,6 +4,7 @@ Sizer is an image resizing microservice with a React frontend and Golang backend
 
 ### Dependencies
 Install [golang](https://go.dev)
+
 `node.js` must be installed to use node package manager (npm)
 
 ## Project Execution guide
