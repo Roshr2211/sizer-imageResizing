@@ -10,6 +10,50 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+h2,h3,h4{
+  font-size: 1.2rem; /* Slightly larger heading */
+  color: #fff7f7; /* Dark text color */
+  text-align: center; /* Center the heading */
+}
+
+.resizer {
+  margin-top: 20px;
+}
+
+.presets button {
+  margin: 5px;
+  padding: 8px 12px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.resize-button{
+  margin: 5px;
+  padding: 8px 12px;
+  color: white;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+.resize-controls input {
+  margin: 5px;
+  padding: 5px;
+}
+
+.custom-preset-controls button {
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
